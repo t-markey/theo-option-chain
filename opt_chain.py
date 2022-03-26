@@ -14,13 +14,13 @@ from math import log
 #===============Flask===============#
 app = Flask(__name__)
 
-
+'''
 @app.route("/")
 def index():
     return df_html
 
-
-@app.route("/chain", methods=("POST", "GET"))
+'''
+@app.route("/", methods=("POST", "GET"))
 def chain():
     if request.method == 'POST':
    
@@ -248,6 +248,6 @@ def testing(values, number_of_strikes ):
 
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug = False)
 
 

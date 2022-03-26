@@ -17,15 +17,17 @@ Actual market data is used in two small places:
 
 Using the Pip package manager:
 ```bash
-pip install yfinance
-pip install -U Flask
+pip install pipenv
+cd theo-option-chain
+pipenv shell
+pipenv install -r requirements.txt
 ```
 
 ## Usage of Flask app
 
 Setting an environment variable for the flask project:
 ```bash
-cd the-option-chain
+cd theo-option-chain
 export FLASK_APP=opt_chain.python
 flask run
 ```
