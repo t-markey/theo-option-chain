@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theo. Option Prices</title>
+</head>
+<body>
+ <form action = "http://localhost:5000/chain" method = "post">
+         <p>Enter Ticker (e.g. AAPL, AMD) :</p>
+         <p><input type = "text" name = "ticker" /></p>
+         <p>Price of underlying :</p>
+         <p><input type = "text" name = "price" /></p>
+         <p>Enter Days until Expiration (DTE):</p>
+         <p><input type = "text" name = "dte" /></p>
+         <p>Implied volatility (e.g. .30 for 30%):</p>
+         <p><input type = "text" name = "vol" /></p>
+         <p>Number of strikes to display (40 ):</p>
+         <p><input type = "text" name = "strikes" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+  </form>
+
+
+
+
+{% for i in info_list %}
+	{% autoescape false %}
+  	{{i}}<br>
+  	{% endautoescape %}
+{% endfor %}
+<br><br>
+
+{{o_chain| safe}}
+
+
+
+</body>
+</html>
