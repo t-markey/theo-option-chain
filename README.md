@@ -13,6 +13,10 @@ Actual market data is used in two small places:
 ![AAPL](AAPL.png)
 ![AMD](AMD.png)
 
+See this as part of a demo project @ [http://stockgnome.com](http://stockgnome.com)
+
+![hosted photo](hosted.png)
+
 ## Installation
 
 Using the Pip package manager:
@@ -28,7 +32,7 @@ pipenv install -r requirements.txt
 Setting an environment variable for the flask project:
 ```bash
 cd theo-option-chain
-export FLASK_APP=opt_chain.python
+export FLASK_APP=opt_chain.py
 flask run
 ```
 
@@ -52,6 +56,8 @@ flask run
 Great information here about implementing options related calculations in python : [Codearmo](https://www.codearmo.com)
 
 Some links on the math using Black-Scholes-Merton : [Easy](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities/black-scholes/v/introduction-to-the-black-scholes-formula), [Medium](https://en.wikipedia.org/wiki/Black–Scholes_model), [Hard](http://math.uchicago.edu/~may/REU2014/REUPapers/Wang.pdf)
+
+Hosting with [AWS](https://www.twilio.com/blog/deploy-flask-python-app-aws)
 
 
 
